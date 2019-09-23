@@ -1,0 +1,17 @@
+[DBConfigs.user_info]
+	Database = "hsn"
+	Disable = 0
+
+[TableConfigs.user_info]
+	TableName = "user_info"
+	DisableRow = 0
+	DisableLog = 0
+	Retention = "48h"
+
+[MaxWell]
+	CacheSize = 2000
+	WithoutMeta = 0
+	KafkaVersion = "2.3.0"
+	Brokers = ["192.168.100.181:9092"]
+	Topic = "hsn_hsn"
+	Prefix = "maxwell"
